@@ -1,0 +1,19 @@
+git config user.email "lmaldonado@mstecs.com"
+git config user.name "Automatic Build"
+git remote update
+git fetch
+git checkout --track origin/main
+dir
+git log
+cd ../
+dir
+mv sPermitManagement s/sPermitManagement
+cd s
+dir
+git status
+git add --all
+git status
+git commit -m "solution init"
+git log
+echo push code to new repo
+git -c http.extraheader="AUTHORIZATION: bearer $(System.AccessToken)" push origin main
